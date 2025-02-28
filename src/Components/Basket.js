@@ -1,7 +1,7 @@
 import React, { useContext, useState , useEffect} from "react";
 import { BasketContext } from "./BasketContext";
 import BillingPage from "./BillingPage";
-import { Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Cart = () => {
   const { cart = [], removeFromCart } = useContext(BasketContext); // Ensuring cart is always an array

@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
 
 const Account = () => {
   const [user, setUser] = useState({ name: "", email: "" });
-  const navigate=useNavigate();
 
   useEffect(() => {
       const loggedInUser= JSON.parse(localStorage.getItem("loggedInUser"));
